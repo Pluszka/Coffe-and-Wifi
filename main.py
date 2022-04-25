@@ -48,6 +48,7 @@ def add_cafe():
             data_base.write(f'{form.coffee_rating.data},')
             data_base.write(f'{form.wifi_rating.data},')
             data_base.write(f'{form.power_rating.data}')
+        return render_template('success.html')
     return render_template('add.html', form=form)
 
 
